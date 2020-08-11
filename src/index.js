@@ -1,12 +1,6 @@
-import _ from 'lodash';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const component = () => {
-    const element = document.createElement('div');
+const SampleComponent = React.createElement('div',{},'This is Sample React Component')
 
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack', 'EhsanGazar'], ' ');
-
-    return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(SampleComponent,document.getElementById('App'));
